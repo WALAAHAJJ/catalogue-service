@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/catalogue_db
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 10
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  mvc:
+    cors:
+      mappings:
+        - path-pattern: "/**"
+          allowed-origins: "http://localhost:3000"
+          allowed-methods: "*"
+          allowed-headers: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics"
+logging:
+  level:
+    org.springframework.jdbc.core: INFO

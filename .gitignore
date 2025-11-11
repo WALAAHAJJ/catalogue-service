@@ -1,0 +1,14 @@
+# Java / Maven / IDE
+target/
+.idea/
+*.iml
+.mvn/wrapper/maven-wrapper.jar
+# OS
+.DS_Store
+# Docker
+*.log
+# Postman env secrets
+postman/*-environment.json
+# Config locales
+*.env
+* text=auto

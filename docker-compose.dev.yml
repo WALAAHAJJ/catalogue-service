@@ -1,0 +1,11 @@
+services:
+  catalogue:
+    build: .
+    image: goodfood/catalogue:0.1
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://host.docker.internal:5433/catalogue_db"
+      SPRING_DATASOURCE_USERNAME: "postgres"
+      SPRING_DATASOURCE_PASSWORD: "postgres"
+    depends_on: []
