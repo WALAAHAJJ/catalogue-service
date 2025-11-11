@@ -1,3 +1,5 @@
+
+[![CI](https://github.com/WALAAHAJJ/catalogue-service/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/WALAAHAJJ/catalogue-service/actions/workflows/ci.yml)
 # GoodFood – Catalogue Service
 Spring Boot + Postgres. Endpoints: `/restaurants`, `/restaurants/{id}/menu`, CRUD catégories & items.
 
